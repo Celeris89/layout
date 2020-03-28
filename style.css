@@ -1,0 +1,39 @@
+header {
+    color: white;
+    width: 1024px;
+    height: 252px;
+    background-color: #4c5fab;
+}
+
+.circle {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+}
+
+.aside {
+    width: 637px;
+    height: 442px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.interest {
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+footer {
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    font-family: "Myriad Pro";
+    background-color: #4c5fab;
+}
