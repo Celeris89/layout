@@ -1,19 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 1280px;
+}
+
+main,
+aside {
+    height: calc(100vh - 250px);
+    width: 1280px;
+    display: inline-table;
+}
+
+aside {
+    text-align: left;
+    position: relative;
+    top: -500px;
+}
+
 header {
     color: white;
-    width: 1024px;
-    height: 252px;
+    width: 1280px;
+    height: 170px;
+    font-family: "Opem Sans";
     background-color: #4c5fab;
 }
 
-.circle {
+.name {
+    top: 50px;
+    text-align: center;
     position: relative;
-    left: 0px;
-    top: 0px;
+}
+
+.contact {
+    text-align: right;
+    position: relative;
+    right: 30px;
+    top: -70px;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
     z-index: 5;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+}
+
+.portfolio::after {
+    content: "";
+    clear: both;
+    display: inline-table;
+    float: right;
+    text-align: right
+}
+
+.pictures {
+    float: right;
+    padding: 15px;
+    width: 75%;
+    box-sizing: content-box;
+    column-count: 2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+
+.box:hover {
+    background-color: #0099cc;
 }
 
 .aside {
-    width: 637px;
+    width: 25%;
     height: 442px;
     font-size: 18px;
     line-height: 29px;
@@ -36,4 +106,6 @@ footer {
     color: white;
     font-family: "Myriad Pro";
     background-color: #4c5fab;
+    height: 80px;
+    width: 1280px;
 }
