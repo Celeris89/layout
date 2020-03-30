@@ -1,125 +1,266 @@
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        width: 1280px;
-        font-family: "Montserrat", "Open Sans", sans-serif;
-    }
-    
-    main,
-    aside {
-        min-height: calc(100vh - 170px - 80px);
-        display: inline-block;
-        font-family: "Montserrat", "Open Sans", sans-serif;
-    }
-    
-    main {
-        background-color: #ffffff;
-        width: 70%;
-        float: right;
-        /* margin-right: 20px; */
-    }
-    
-    aside {
-        background-color: #fafafa;
-        width: 30%;
-        font-size: 18px;
-        line-height: 29px;
-        color: #252b2d;
-        font-weight: 400;
-        float: left;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    
-    header {
-        color: white;
-        height: 170px;
-        background-color: #4c5fab;
-    }
-    
-    .name {
-        top: 50px;
-        position: relative;
-        text-align: left;
-        font-weight: bold;
-        font: large;
-        left: 300px;
-    }
-    
-    .contact {
-        text-align: right;
-        position: relative;
-        right: 30px;
-        top: 10px;
-    }
-    
-    .circle {
-        height: 120px;
-        width: 120px;
-        background-color: #d6d6d6;
-        border-radius: 50%;
-        z-index: 1;
-        position: absolute;
-        float: left;
-        left: 70px;
-        top: 30px;
-    }
-    
-    .portfolio::after {
-        content: "";
-        clear: both;
-        text-align: right;
-    }
-    
-    .chapter {
-        padding: 10px;
-    }
-    
-    .pictures {
-        float: right;
-        padding: 15px;
-        box-sizing: content-box;
-        column-count: 2;
-        text-align: center;
-        vertical-align: middle;
-    }
-    
-    .box {
-        width: 280px;
-        height: 310px;
-        background-color: tomato;
-        column-gap: 10%;
-    }
-    
-    img {
-        width: 100%;
-    }
-    
-    .box:hover {
-        background-color: #0099cc;
-    }
-    
-    .interest {
-        font-size: 26px;
-        line-height: 49px;
-        color: #1c2123;
-        font-weight: 400;
-    }
-    
-    footer {
-        display: inline-block;
-        font-size: 18px;
-        line-height: 28px;
-        color: black;
-        font-family: "Myriad Pro";
-        background-color: #4c5fab;
-        height: 80px;
-        width: 1280px;
-        z-index: 8;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 1280px;
+}
+
+main,
+aside {
+    min-height: calc(100vh - 170px - 80px);
+    display: inline-block;
+}
+
+main {
+    background-color: #ffffff;
+    width: 70%;
+    float: right;
+    /* margin-right: 20px; */
+}
+
+aside {
+    background-color: #fafafa;
+    width: 30%;
+    font-size: 18px;
+    line-height: 29px;
+    color: #252b2d;
+    font-weight: 400;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+}
+
+header {
+    color: white;
+    height: 170px;
+    background-color: #4c5fab;
+}
+
+.name {
+    top: 20px;
+    position: relative;
+    text-align: left;
+    left: 300px;
+    font-size: 39px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+.name2 {
+    top: 30px;
+    position: relative;
+    text-align: left;
+    left: 300px;
+    font-size: 23px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.contact {
+    text-align: right;
+    position: relative;
+    right: 30px;
+    top: -40px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    left: 70px;
+    top: 30px;
+}
+
+
+/*blue circe and fa briefcase together are creating icons with blue background that are suppose to be next to the h3 elements*/
+
+.blue_circle {
+    background-color: #4c5fab;
+    width: 44px;
+    height: 45px;
+    border-radius: 22px;
+    z-index: -2;
+    text-align: center;
+    float: left;
+}
+
+.fa-briefcase {
+    color: white;
+    z-index: 3;
+    margin: 15px 0px;
+    width: 17px;
+    height: 16px;
+    border-radius: 1px;
+}
+
+.portfolio::after {
+    content: "";
+    clear: both;
+    text-align: right;
+}
+
+.chapter {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.pictures {
+    float: right;
+    padding: 15px;
+    box-sizing: content-box;
+    column-count: 2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box {
+    width: 280px;
+    height: 310px;
+    background-color: tomato;
+    column-gap: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    width: 100%;
+}
+
+.box:hover {
+    background-color: #0099cc;
+}
+
+figcaption {
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.smaller {
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: cente
+}
+
+.interest {
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-weight: 400;
+}
+
+.about {
+    height: 442px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.aside_info {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+
+/*fancy_thing is a name for a symbol created from two dots and a line, it supposed to be on the left of the screen, next to the text*/
+
+.fancy_thing {
+    float: left;
+}
+
+.dot1,
+.dot2 {
+    width: 19px;
+    height: 19px;
+    border-radius: 9px;
+    background-color: #505252;
+    border: 1px solid #505252;
+}
+
+.line {
+    width: 2px;
+    height: 92px;
+    background-color: #3f5757;
+    border: 1px solid #517575;
+    margin-left: 9px;
+}
+
+.number {
+    font-size: 18px;
+    line-height: 20px;
+    color: #060808;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.blue {
+    font-size: 18px;
+    line-height: 20px;
+    color: #3449dc;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.icon {
+    width: 13px;
+    height: 25px;
+    border-radius: 2px;
+    filter: drop-shadow(0px 2px 1px rgba(6, 8, 8, 0.2));
+    background-image: linear-gradient(0deg, #f1f4f5 0%, #ffffff 100%);
+}
+
+span {
+    font-size: 18px;
+    line-height: 49px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-align: center;
+}
+
+footer {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    font-family: "Myriad Pro";
+    background-color: #4c5fab;
+    height: 80px;
+    width: 1280px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
