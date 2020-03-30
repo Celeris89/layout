@@ -1,111 +1,125 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100vh;
-    width: 1280px;
-}
-
-main,
-aside {
-    height: calc(100vh - 250px);
-    width: 1280px;
-    display: inline-table;
-}
-
-aside {
-    text-align: left;
-    position: relative;
-    top: -500px;
-}
-
-header {
-    color: white;
-    width: 1280px;
-    height: 170px;
-    font-family: "Opem Sans";
-    background-color: #4c5fab;
-}
-
-.name {
-    top: 50px;
-    text-align: center;
-    position: relative;
-}
-
-.contact {
-    text-align: right;
-    position: relative;
-    right: 30px;
-    top: -70px;
-}
-
-.circle {
-    height: 120px;
-    width: 120px;
-    background-color: #d6d6d6;
-    border-radius: 50%;
-    z-index: 5;
-    position: absolute;
-    left: 70px;
-    top: 50px;
-}
-
-.portfolio::after {
-    content: "";
-    clear: both;
-    display: inline-table;
-    float: right;
-    text-align: right
-}
-
-.pictures {
-    float: right;
-    padding: 15px;
-    width: 75%;
-    box-sizing: content-box;
-    column-count: 2;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.box {
-    padding: 8px;
-    margin-bottom: 8px;
-    background-color: #33b5e5;
-    color: #ffffff;
-}
-
-.box:hover {
-    background-color: #0099cc;
-}
-
-.aside {
-    width: 25%;
-    height: 442px;
-    font-size: 18px;
-    line-height: 29px;
-    color: #252b2d;
-    font-family: "Open Sans";
-    font-weight: 400;
-}
-
-.interest {
-    font-size: 26px;
-    line-height: 49px;
-    color: #1c2123;
-    font-family: "Montserrat";
-    font-weight: 400;
-}
-
-footer {
-    font-size: 18px;
-    line-height: 28px;
-    color: white;
-    font-family: "Myriad Pro";
-    background-color: #4c5fab;
-    height: 80px;
-    width: 1280px;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 1280px;
+        font-family: "Montserrat", "Open Sans", sans-serif;
+    }
+    
+    main,
+    aside {
+        min-height: calc(100vh - 170px - 80px);
+        display: inline-block;
+        font-family: "Montserrat", "Open Sans", sans-serif;
+    }
+    
+    main {
+        background-color: #ffffff;
+        width: 70%;
+        float: right;
+        /* margin-right: 20px; */
+    }
+    
+    aside {
+        background-color: #fafafa;
+        width: 30%;
+        font-size: 18px;
+        line-height: 29px;
+        color: #252b2d;
+        font-weight: 400;
+        float: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    header {
+        color: white;
+        height: 170px;
+        background-color: #4c5fab;
+    }
+    
+    .name {
+        top: 50px;
+        position: relative;
+        text-align: left;
+        font-weight: bold;
+        font: large;
+        left: 300px;
+    }
+    
+    .contact {
+        text-align: right;
+        position: relative;
+        right: 30px;
+        top: 10px;
+    }
+    
+    .circle {
+        height: 120px;
+        width: 120px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+        float: left;
+        left: 70px;
+        top: 30px;
+    }
+    
+    .portfolio::after {
+        content: "";
+        clear: both;
+        text-align: right;
+    }
+    
+    .chapter {
+        padding: 10px;
+    }
+    
+    .pictures {
+        float: right;
+        padding: 15px;
+        box-sizing: content-box;
+        column-count: 2;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .box {
+        width: 280px;
+        height: 310px;
+        background-color: tomato;
+        column-gap: 10%;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .box:hover {
+        background-color: #0099cc;
+    }
+    
+    .interest {
+        font-size: 26px;
+        line-height: 49px;
+        color: #1c2123;
+        font-weight: 400;
+    }
+    
+    footer {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 28px;
+        color: black;
+        font-family: "Myriad Pro";
+        background-color: #4c5fab;
+        height: 80px;
+        width: 1280px;
+        z-index: 8;
+    }
