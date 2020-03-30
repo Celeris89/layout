@@ -20,7 +20,6 @@ main {
     background-color: #ffffff;
     width: 70%;
     float: right;
-    /* margin-right: 20px; */
 }
 
 aside {
@@ -90,7 +89,8 @@ header {
 }
 
 
-/*blue circe and fa briefcase together are creating icons with blue background that are suppose to be next to the h3 elements*/
+/*blue circe and fa briefcase together are creating icons,
+ with blue background that are supposed to be next to the h3 elements*/
 
 .blue_circle {
     background-color: #4c5fab;
@@ -99,16 +99,20 @@ header {
     border-radius: 22px;
     z-index: -2;
     text-align: center;
+    vertical-align: -webkit-baseline-middle;
     float: left;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .fa-briefcase {
     color: white;
     z-index: 3;
-    margin: 15px 0px;
+    margin-bottom: 15px;
     width: 17px;
     height: 16px;
     border-radius: 1px;
+    vertical-align: middle;
 }
 
 .portfolio::after {
@@ -128,20 +132,23 @@ header {
 }
 
 .pictures {
-    float: right;
+    float: left;
+    margin-left: 100px;
     padding: 15px;
     box-sizing: content-box;
     column-count: 2;
     text-align: center;
     vertical-align: middle;
+    column-gap: 40px;
+    margin-top: 10px;
 }
 
 .box {
     width: 280px;
     height: 310px;
-    background-color: tomato;
-    column-gap: 10%;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
 }
 
 img {
@@ -193,6 +200,7 @@ figcaption {
     color: #1c2123;
     font-family: "Montserrat";
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 
