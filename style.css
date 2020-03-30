@@ -23,7 +23,7 @@ main {
 }
 
 aside {
-    background-color: #fafafa;
+    background-color: #fbfcfc;
     width: 30%;
     font-size: 18px;
     line-height: 29px;
@@ -174,7 +174,7 @@ figcaption {
     color: #1c2123;
     font-family: "Open Sans";
     font-weight: 400;
-    text-align: cente
+    text-align: center;
 }
 
 .interest {
@@ -184,13 +184,25 @@ figcaption {
     font-weight: 400;
 }
 
+.small_icons {
+    column-count: 3;
+}
+
+.icon2 {
+    width: 80x;
+    height: 80px;
+    background-color: #ffc33c;
+    text-align: center;
+}
+
 .about {
-    height: 442px;
+    /* height: 442px; */
     font-size: 18px;
     line-height: 29px;
     color: #252b2d;
     font-family: "Open Sans";
     font-weight: 400;
+    margin-left: 20px;
 }
 
 .aside_info {
@@ -258,6 +270,13 @@ span {
     font-family: "Open Sans";
     font-weight: 600;
     text-align: center;
+}
+
+.divider {
+    width: 2px;
+    height: 1051px;
+    background-color: black;
+    border: black solid 3px;
 }
 
 footer {
