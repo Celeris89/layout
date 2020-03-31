@@ -64,21 +64,23 @@ header {
     font-weight: 400;
 }
 
-.header_icons {
-    float: right;
-    color: black;
+.header-ul {
+    width: 180px;
+    line-height: 28px;
+    color: #ffffff;
+    position: relative;
+    left: 80%;
+    top: -30%;
+}
+
+.fa-map-marker-alt,
+.fa-globe,
+.fa-phone {
+    margin-right: 10px;
 }
 
 .contact {
     text-align: right;
-    position: relative;
-    right: 30px;
-    top: -40px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-weight: 400;
 }
 
 .circle {
@@ -139,9 +141,6 @@ header {
 
 
 /*the pictures are in the boxes desplayed on the left on the screen*/
-
-
-/*  */
 
 .pictures {
     float: left;
@@ -317,11 +316,11 @@ the fa-thingys are icons themself*/
 
 .divider {
     width: 1px;
-    height: 100%;
+    min-height: 100%;
     background-color: black;
-    border: black solid 3px;
-    position: static;
-    float: right;
+    border: black solid 2px;
+    position: absolute;
+    left: 25%;
 }
 
 footer {
