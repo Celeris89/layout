@@ -64,6 +64,11 @@ header {
     font-weight: 400;
 }
 
+.header_icons {
+    float: right;
+    color: black;
+}
+
 .contact {
     text-align: right;
     position: relative;
@@ -94,12 +99,12 @@ header {
 
 .blue_circle {
     background-color: #4c5fab;
-    width: 44px;
-    height: 45px;
-    border-radius: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     z-index: -2;
     text-align: center;
-    vertical-align: -webkit-baseline-middle;
+    /*vertical-align: middle;*/
     float: left;
     margin-left: 10px;
     margin-right: 20px;
@@ -108,11 +113,12 @@ header {
 .fa-briefcase {
     color: white;
     z-index: 3;
+    margin-top: 5px;
     margin-bottom: 15px;
-    width: 17px;
-    height: 16px;
+    margin-right: 5px;
+    width: 16px;
+    height: 15px;
     border-radius: 1px;
-    vertical-align: middle;
 }
 
 .portfolio::after {
@@ -130,6 +136,12 @@ header {
     font-family: "Montserrat";
     font-weight: bold;
 }
+
+
+/*the pictures are in the boxes desplayed on the left on the screen*/
+
+
+/*  */
 
 .pictures {
     float: left;
@@ -159,7 +171,10 @@ img {
     background-color: #0099cc;
 }
 
-figcaption {
+
+/*desc and smaller are the text beneath the pictures in the boxes*/
+
+.desc {
     font-size: 18px;
     line-height: 20px;
     color: #1c2123;
@@ -184,19 +199,39 @@ figcaption {
     font-weight: 400;
 }
 
+
+/*small icons and icons are values responsible for displying the interests
+the fa-thingys are icons themself*/
+
+.fa-headphones,
+.fa-gamepad,
+.fa-motorcycle {
+    font-size: 25px;
+    color: #4c5fab;
+    text-align: center;
+    margin: 8px 0px;
+    padding-bottom: 30px;
+}
+
 .small_icons {
     column-count: 3;
 }
 
-.icon2 {
-    width: 80x;
-    height: 80px;
-    background-color: #ffc33c;
+.icon {
+    width: 70px;
+    height: 70px;
+    border: solid 8px #4c5fab;
+    border-radius: 50%;
+    padding: 5px;
     text-align: center;
+    vertical-align: middle;
+    column-gap: 50px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 2px 1px rgba(6, 8, 8, 0.2));
+    background-image: linear-gradient(0deg, #f1f4f5 0%, #ffffff 100%);
 }
 
 .about {
-    /* height: 442px; */
     font-size: 18px;
     line-height: 29px;
     color: #252b2d;
@@ -212,7 +247,7 @@ figcaption {
     color: #1c2123;
     font-family: "Montserrat";
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 
@@ -222,8 +257,7 @@ figcaption {
     float: left;
 }
 
-.dot1,
-.dot2 {
+.dot {
     width: 19px;
     height: 19px;
     border-radius: 9px;
@@ -239,6 +273,9 @@ figcaption {
     margin-left: 9px;
 }
 
+
+/*the date and text in the experience*/
+
 .number {
     font-size: 18px;
     line-height: 20px;
@@ -246,6 +283,9 @@ figcaption {
     font-family: "Open Sans";
     font-weight: 400;
 }
+
+
+/*The blue text in the experience*/
 
 .blue {
     font-size: 18px;
@@ -255,28 +295,33 @@ figcaption {
     font-weight: 600;
 }
 
-.icon {
-    width: 13px;
-    height: 25px;
-    border-radius: 2px;
-    filter: drop-shadow(0px 2px 1px rgba(6, 8, 8, 0.2));
-    background-image: linear-gradient(0deg, #f1f4f5 0%, #ffffff 100%);
-}
 
-span {
+/*the names of the interests beneath the icons*/
+
+.text {
     font-size: 18px;
-    line-height: 49px;
     color: #252b2d;
     font-family: "Open Sans";
     font-weight: 600;
     text-align: center;
+    margin-left: -10px;
+}
+
+.awards {
+    font-size: 18px;
+    line-height: 35px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 600;
 }
 
 .divider {
-    width: 2px;
-    height: 1051px;
+    width: 1px;
+    height: 100%;
     background-color: black;
     border: black solid 3px;
+    position: static;
+    float: right;
 }
 
 footer {
