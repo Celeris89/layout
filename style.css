@@ -6,93 +6,108 @@
 
 html,
 body {
-    height: 100%;
-    width: 1280px;
+    height: 100vh;
+    width: 1024px;
 }
 
 main,
 aside {
-    min-height: calc(100vh - 170px - 80px);
-    display: inline-block;
+    min-height: calc(100vh - 252px - 80px);
 }
 
 main {
     background-color: #ffffff;
-    width: 70%;
+    width: 65%;
     float: right;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 aside {
     background-color: #fbfcfc;
-    width: 30%;
+    width: 35%;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 49px;
     color: #252b2d;
     font-weight: 400;
     float: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-bottom: 48px;
 }
 
 header {
     color: white;
-    height: 170px;
+    height: 252px;
     background-color: #4c5fab;
 }
 
 .name {
-    top: 20px;
+    top: 30%;
     position: relative;
     text-align: left;
-    left: 300px;
-    font-size: 39px;
+    left: 250px;
+    font-size: 40px;
     letter-spacing: 2px;
     color: #ffffff;
-    font-family: "Montserrat";
-    font-weight: 800;
+    /* font-family: "Montserrat"; */
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 
 .name2 {
-    top: 30px;
+    top: 33%;
     position: relative;
     text-align: left;
-    left: 300px;
+    left: 250px;
     font-size: 23px;
     color: #ffffff;
     font-family: "Open Sans";
-    font-weight: 400;
+    font-weight: lighter;
 }
+
+
+/*header-ul is a list within a header section that creates a side contact information with icons (fa) next to them*/
 
 .header-ul {
     width: 180px;
-    line-height: 28px;
+    line-height: 26px;
     color: #ffffff;
+    left: 70%;
+    top: -10%;
     position: relative;
-    left: 80%;
-    top: -30%;
 }
 
 .fa-map-marker-alt,
 .fa-globe,
 .fa-phone {
     margin-right: 10px;
+    margin-top: 13px;
+    position: absolute;
 }
 
 .contact {
-    text-align: right;
+    text-align: left;
+    right: 20px;
+    font-size: 18px;
+    color: #f3f4f9;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight: lighter;
 }
 
 .circle {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     background-color: #d6d6d6;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
     float: left;
     left: 70px;
-    top: 30px;
+    top: 50px;
 }
 
 
@@ -106,7 +121,6 @@ header {
     border-radius: 50%;
     z-index: -2;
     text-align: center;
-    /*vertical-align: middle;*/
     float: left;
     margin-left: 10px;
     margin-right: 20px;
@@ -114,13 +128,13 @@ header {
 
 .fa-briefcase {
     color: white;
-    z-index: 3;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    width: 16px;
+    margin: 15px;
+    width: 15px;
     height: 15px;
-    border-radius: 1px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: sticky;
 }
 
 .portfolio::after {
@@ -130,21 +144,21 @@ header {
 }
 
 .chapter {
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 10px;
     font-size: 26px;
     line-height: 49px;
     color: #1c2123;
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: bold;
+    margin-left: -30px;
 }
 
 
-/*the pictures are in the boxes desplayed on the left on the screen*/
+/*the pictures are in the boxes desplayed on the right on the screen*/
 
 .pictures {
-    float: left;
-    margin-left: 100px;
+    float: right;
     padding: 15px;
     box-sizing: content-box;
     column-count: 2;
@@ -152,11 +166,12 @@ header {
     vertical-align: middle;
     column-gap: 40px;
     margin-top: 10px;
+    margin-left: 40px;
 }
 
 .box {
-    width: 280px;
-    height: 310px;
+    width: 241px;
+    height: 262px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 50px;
@@ -217,11 +232,11 @@ the fa-thingys are icons themself*/
 }
 
 .icon {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border: solid 8px #4c5fab;
     border-radius: 50%;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
     vertical-align: middle;
     column-gap: 50px;
@@ -240,11 +255,11 @@ the fa-thingys are icons themself*/
 }
 
 .aside_info {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 26px;
     line-height: 49px;
     color: #1c2123;
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -252,24 +267,41 @@ the fa-thingys are icons themself*/
 
 /*fancy_thing is a name for a symbol created from two dots and a line, it supposed to be on the left of the screen, next to the text*/
 
+
+/*TimeLine*/
+
+.ul_timeline {
+    column-count: 2;
+    float: left;
+}
+
 .fancy_thing {
     float: left;
+    size: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-block-end: 15px;
 }
 
 .dot {
     width: 19px;
     height: 19px;
     border-radius: 9px;
-    background-color: #505252;
-    border: 1px solid #505252;
+    background-color: white;
+    border: 6px solid #999696;
 }
 
 .line {
-    width: 2px;
+    width: 0px;
     height: 92px;
     background-color: #3f5757;
     border: 1px solid #517575;
     margin-left: 9px;
+}
+
+.timeline_entry {
+    margin-block-end: 27px;
 }
 
 
@@ -314,24 +346,15 @@ the fa-thingys are icons themself*/
     font-weight: 600;
 }
 
-.divider {
-    width: 1px;
-    min-height: 100%;
-    background-color: black;
-    border: black solid 2px;
-    position: absolute;
-    left: 25%;
-}
-
 footer {
     display: inline-block;
     font-size: 18px;
     line-height: 28px;
     color: white;
-    font-family: "Myriad Pro";
+    font-family: "Open Sans";
     background-color: #4c5fab;
     height: 80px;
-    width: 1280px;
+    width: 1024px;
     padding-left: 30px;
     padding-top: 30px;
 }

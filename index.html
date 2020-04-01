@@ -9,27 +9,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3acae19016.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <h1 class="name">Adrew Smith<br></h1>
-    <h3 class="name2">UI/UX Designer</h3>
-
-    <ul class="header-ul">
-        <li class="fas fa-map-marker-alt">67/B Munshi para Sylhet</li>
-        <li class="fas fa-globe">itsnuman.com<br>jan@mail.com</li>
-        <li class="fas fa-phone">+444 034 534</li>
-    </ul>
-    <span class="circle"></span>
-</header>
 
 <body>
-    <div class="divider"></div>
+    <header>
+        <h1 class="name">Adrew Smith<br></h1>
+        <h3 class="name2">UI/UX Designer</h3>
+        <!--The list here is a side contact information within a header with a small icons next to them-->
+        <ul class="header-ul">
+            <span class="fas fa-map-marker-alt"></span>
+            <p class="contact">67/B Munshi para Sylhet</p>
+            <span class="fas fa-globe"></span>
+            <p class="contact"> itsnuman.com<br>jan@mail.com</p>
+            <span class="fas fa-phone"></span>
+            <p class="contact">+444 034 534</p>
+        </ul>
+        <span class="circle"></span>
+    </header>
+    <!--main contains 6 boxes with pictures in them and a text beneath them-->
     <main>
         <section class="portfolio">
             <section class="chapter">
                 <div class="blue_circle">
                     <span class="fas fa-briefcase"></span>
                 </div>
-                <h3>Portfolio</h3>
+                <h3> Portfolio</h3>
             </section>
             <div>
                 <ul class="pictures">
@@ -73,7 +76,8 @@
             </div>
         </section>
     </main>
-
+    <!--Aside has a lot of icons and text next to them
+The blue circle and fa-briefcase together are creating one icon that is next to every h3 element-->
     <aside class="aside">
         <section>
             <section class="aside_info">
@@ -83,7 +87,7 @@
                 <h3>Profile Info</h3>
             </section>
             <p class="about">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus nibh nisi, eget sollicitudin sapien malesuada sit amet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus nibh nisi, eget sollicitudin sapien malesuada sit amet. Sed faucibus arcu maximus.
             </p>
             <section class="aside_info">
                 <div class="blue_circle">
@@ -111,17 +115,24 @@
                 </div>
                 <h3>Reference</h3>
             </section>
+            <!-- TimeLine region -->
             <section class="fancy_thing">
                 <div class="dot"></div>
                 <div class="line"></div>
                 <div class="dot"></div>
             </section>
-            <p class="number">1999-Present</p>
-            <p class="blue">Sheikh Al Rayhan</p>
-            <p class="number">CEO, DeviserWeb</p>
-            <p class="number">2000-2012</p>
-            <p class="blue">Junaed Ahmed Numan</p>
-            <p class="number">Google Developer</p>
+            <section>
+                <div class="timeline_entry" style="padding-top: -4px">
+                    <p class="number">1999-Present</p>
+                    <p class="blue">Sheikh Al Rayhan</p>
+                    <p class="number">CEO, DeviserWeb</p>
+                </div>
+                <div style="padding-top: 20px">
+                    <p class="number">2000-2012</p>
+                    <p class="blue">Junaed Ahmed Numan</p>
+                    <p class="number">Google Developer</p>
+                </div>
+            </section>
             <section class="aside_info">
                 <div class="blue_circle">
                     <span class="fas fa-briefcase"></span>
