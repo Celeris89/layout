@@ -73,7 +73,7 @@ header {
     width: 180px;
     line-height: 26px;
     color: #ffffff;
-    left: 70%;
+    left: 76%;
     top: -10%;
     position: relative;
 }
@@ -277,11 +277,9 @@ the fa-thingys are icons themself*/
 
 .fancy_thing {
     float: left;
-    size: 15px;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-block-end: 15px;
 }
 
 .dot {
@@ -301,7 +299,7 @@ the fa-thingys are icons themself*/
 }
 
 .timeline_entry {
-    margin-block-end: 27px;
+    padding-top: -4px;
 }
 
 
