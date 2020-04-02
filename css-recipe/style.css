@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 1024px;
+}
+
+main,
+aside {
+    min-height: calc(100vh - 252px - 80px);
+}
+
+main {
+    background-color: #ffffff;
+    width: 65%;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+aside {
+    background-color: #fbfcfc;
+    width: 35%;
+    font-size: 18px;
+    line-height: 49px;
+    color: #252b2d;
+    font-weight: 400;
+    float: left;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-bottom: 48px;
+}
+
+header {
+    color: white;
+    height: 252px;
+    background-color: #4c5fab;
+}
+
+.name {
+    top: 30%;
+    position: relative;
+    text-align: left;
+    left: 250px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    /* font-family: "Montserrat"; */
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.name2 {
+    top: 33%;
+    position: relative;
+    text-align: left;
+    left: 250px;
+    font-size: 23px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: lighter;
+}
+
+
+/*header-ul is a list within a header section that creates a side contact information with icons (fa) next to them*/
+
+.header-ul {
+    width: 180px;
+    line-height: 26px;
+    color: #ffffff;
+    left: 76%;
+    top: -10%;
+    position: relative;
+}
+
+.fa-map-marker-alt,
+.fa-globe,
+.fa-phone {
+    margin-right: 10px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+.contact {
+    text-align: left;
+    right: 20px;
+    font-size: 18px;
+    color: #f3f4f9;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight: lighter;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    left: 70px;
+    top: 50px;
+}
+
+
+/*blue circe and fa briefcase together are creating icons,
+ with blue background that are supposed to be next to the h3 elements*/
+
+.blue_circle {
+    background-color: #4c5fab;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: -2;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.fa-briefcase {
+    color: white;
+    margin: 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: sticky;
+}
+
+.portfolio::after {
+    content: "";
+    clear: both;
+    text-align: right;
+}
+
+.chapter {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-left: -30px;
+}
+
+
+/*the pictures are in the boxes desplayed on the right on the screen*/
+
+.pictures {
+    float: right;
+    padding: 15px;
+    box-sizing: content-box;
+    column-count: 2;
+    text-align: center;
+    vertical-align: middle;
+    column-gap: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.box {
+    width: 241px;
+    height: 262px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+.box:hover {
+    background-color: #0099cc;
+}
+
+
+/*desc and smaller are the text beneath the pictures in the boxes*/
+
+.desc {
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.smaller {
+    font-size: 18px;
+    line-height: 20px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
+
+.interest {
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-weight: 400;
+}
+
+
+/*small icons and icons are values responsible for displying the interests
+the fa-thingys are icons themself*/
+
+.fa-headphones,
+.fa-gamepad,
+.fa-motorcycle {
+    font-size: 25px;
+    color: #4c5fab;
+    text-align: center;
+    margin: 8px 0px;
+    padding-bottom: 30px;
+}
+
+.small_icons {
+    column-count: 3;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border: solid 8px #4c5fab;
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    column-gap: 50px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 2px 1px rgba(6, 8, 8, 0.2));
+    background-image: linear-gradient(0deg, #f1f4f5 0%, #ffffff 100%);
+}
+
+.about {
+    font-size: 18px;
+    line-height: 29px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.aside_info {
+    margin-top: 40px;
+    font-size: 26px;
+    line-height: 49px;
+    color: #1c2123;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+/*fancy_thing is a name for a symbol created from two dots and a line, it supposed to be on the left of the screen, next to the text*/
+
+
+/*TimeLine*/
+
+.ul_timeline {
+    column-count: 2;
+    float: left;
+}
+
+.fancy_thing {
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.dot {
+    width: 19px;
+    height: 19px;
+    border-radius: 9px;
+    background-color: white;
+    border: 6px solid #999696;
+}
+
+.line {
+    width: 0px;
+    height: 92px;
+    background-color: #3f5757;
+    border: 1px solid #517575;
+    margin-left: 9px;
+}
+
+.timeline_entry {
+    padding-top: -4px;
+}
+
+
+/*the date and text in the experience*/
+
+.number {
+    font-size: 18px;
+    line-height: 20px;
+    color: #060808;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+
+/*The blue text in the experience*/
+
+.blue {
+    font-size: 18px;
+    line-height: 20px;
+    color: #3449dc;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+
+/*the names of the interests beneath the icons*/
+
+.text {
+    font-size: 18px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.awards {
+    font-size: 18px;
+    line-height: 35px;
+    color: #252b2d;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+footer {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    font-family: "Open Sans";
+    background-color: #4c5fab;
+    height: 80px;
+    width: 1024px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
